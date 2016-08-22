@@ -3,7 +3,7 @@
 if(!file.exists('png')) dir.create('png')
 png(filename = './png/plot4.png', width = 480, height = 480, units='px')
 # plot figure
-Sys.setlocale(category = "LC_ALL", locale = "english")
+
 par(mfrow = c(2, 2))
 plot(data$DateTime, data$Global_active_power, xlab = '', ylab = 'Global Active Power (kilowatt)', type = 'l')
 plot(data$DateTime, data$Voltage, xlab = 'datetime', ylab = 'Voltage', type = 'l')

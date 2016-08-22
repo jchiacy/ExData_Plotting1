@@ -3,7 +3,7 @@
 if(!file.exists('png')) dir.create('png')
 png(filename = './png/plot3.png', width = 480, height = 480, units='px')
 # plot figure
-Sys.setlocale(category = "LC_ALL", locale = "english")
+
 plot(data$DateTime, data$Sub_metering_1, xlab = '', ylab = 'Energy sub metering', type = 'l')
 lines(data$DateTime, data$Sub_metering_2, col = 'red')
 lines(data$DateTime, data$Sub_metering_3, col = 'blue')
